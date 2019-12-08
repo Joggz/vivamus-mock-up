@@ -1,0 +1,543 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway&display=swapp);
+$primary-color: #fff;
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header{
+    background-image: url('./1.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 1rem;
+    font-family: Raleway;
+    
+    color:  $primary-color;
+    overflow-x: hidden;
+   .menu{
+     display: inline-block;
+     color: white;
+     border: 1px solid whitesmoke;
+    border-radius: 3px;
+    margin-top: 1rem;
+    display: none;
+    
+     .line{
+       width: 36px;
+       height: 3px;
+      background-color: #fff;
+      // text-align: center;
+      margin: 6px ;
+      }
+   }
+    .txt{
+        font-size: 32px;
+        
+    }
+    .nav{
+        width: 75vw;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+      
+        
+        .list{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            border-bottom: 1px solid darkgrey;       
+            .item{
+                padding: 10px 15px;
+                
+            }
+          }
+        }
+                .vivamus{
+                  margin-top: 3.5rem;
+                  font-size: 10rem;
+                  letter-spacing: 3rem;
+                  color: white;
+                }
+                .lorem{
+                  border: 1px solid whitesmoke;
+                  width: 320px ;
+                  height: 200px;
+                  margin:  1.5rem auto;
+                  display: flex;
+                  justify-content: center;
+                  align-content: center;
+                  span{
+                  margin-top: 2rem;
+                  position: relative;
+                  text-transform: uppercase ;
+                  word-spacing: 2px;
+                  line-height: 1.6;
+                  }
+                }
+                .btn{
+                  position: relative;
+                  top: -2.5rem;
+                  width: 9rem;
+                  height: 2rem;
+                  text-transform: uppercase ;
+                }
+                @media screen and (max-width:385px){
+                 
+                 height: 85vh;
+
+                   .menu{
+                     display: inline-block;
+                     margin-top: 1rem;
+                   }
+                   .txt{
+                     margin-top: 1.5rem;
+                   }
+                   .nav{
+                     display:none
+                   }
+                   .vivamus{
+                     margin-top: 2rem;
+                     font-size: 3rem;
+                     letter-spacing: 1rem;
+                   }
+                     
+                
+                }
+}
+.welcome{
+   background: $primary-color;
+   width: 75vw;
+   margin: 0 auto;
+   .txt{
+     margin-top: 1.5rem;
+     text-align: center;
+     font-size: 3rem;
+     font-family: Raleway;
+    }
+    .grid {
+      color: rgba($color: #000000, $alpha: 0.45);
+      // border: 1px solid red;
+      display: grid;
+      grid-gap: 0.8rem;
+      grid-template-columns: repeat(3, 1fr); 
+      margin-top: 1.2rem;
+.img{
+  height: 25rem;
+  //  border: 1px solid red;  
+}
+      .grid--text > *{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 5px;
+        // border: 1px solid red;
+        width: 25rem;
+        height: 15vh;
+      }
+    }
+    .advantages{
+      background: lightgrey;
+      .add{
+        font-size: 1.25rem;
+        color: red;
+        text-transform: uppercase;
+      }
+      & > * {
+        padding: .7rem;
+        margin-left: 1.0rem;
+      }
+    }
+    @media screen  and (max-width: 385px){
+      .grid{
+        display: block;
+      }
+      .grid--text{
+        display: none;
+      }
+      .img{
+        width: 100vw;
+        height: 15rem;
+      }
+    }
+}
+.services{
+  margin: 2rem 0;
+  background: lightgrey;
+  h3{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-family: Raleway;
+  }
+  .grid{
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+    
+    .icons,
+    .notes{
+      // border: 1px solid red;
+      flex-basis: 50vw;
+      padding: 1rem;
+    }
+    .icons{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      
+      .i{
+        background-color: white ;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        margin-left: 2rem;
+        margin-bottom: .3rem;
+      }
+      .i-txt{
+        font-size: 12px;
+      }
+    }
+    .notes{
+      .b-txt{
+        color: black;
+      }
+      line-height: 1.6;
+      color: darkgrey;
+      & > p {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  .founder{
+    
+    background-image: url('./1.jpg');
+    background-size: cover ;
+    height: 19rem;
+    overflow: hidden ;
+
+    .f-txt{
+      width: 75vw;
+      // word-wrap: initial;
+      margin: 0 auto;
+      color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+       .john{
+         margin-top: 2rem;
+         text-transform: uppercase;
+         font-size: 1rem;
+         span{
+           font-weight: 800;
+         }
+       }
+      }
+    }
+    @media screen and (max-width: 385px){
+      .grid{
+        display: none;
+      }
+    }
+  }
+
+.events{
+  position: relative;
+ 
+  .event{
+    text-align: center;
+    margin: 5vh 0;
+    font-size: 3rem;
+    font-family: Raleway;
+    // position: relative;
+  }
+  .scheduled{
+    width: 50%;
+    // border: 1px solid red;
+    margin: 0 auto;
+    // position: relative;
+    .card{
+      background: lightgrey;
+      width: 280px;
+      border-bottom: 2px solid orangered;
+      position: absolute;
+      top: 10rem;
+      left: 9rem;
+  
+      .day{
+        font-size: 2rem;
+        font-weight: 400;
+        color: orange;
+      }
+      .date{
+        color: orange;
+        padding-left: 1.5rem;
+        font-weight: 600;
+      }
+      .name{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .nunc{
+        font-size: 14px;
+        line-height: 1.6;
+        color: darkgrey;
+        width:250px;
+      }
+  
+      & > * {
+        padding: 10px;
+        margin: 0 10px;
+      }
+    }
+    .social-invite{
+      background: orangered;
+      width: 3rem;
+      position: absolute;
+      top: 7.65rem;
+      right: 21rem;
+      & > p {
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+  .scheduled1{
+    width: 50%;
+    margin: 0 auto;
+
+    
+    .card1{
+      background: lightgrey;
+      width: 280px;
+      border-bottom: 2px solid green;
+      position: absolute;
+      // height: 100vh;
+      top: 38rem;
+      right: 9rem;
+  
+      .day1{
+        font-size: 2rem;
+        font-weight: 400;
+        color: green;
+      }
+      .date1{
+        color: green;
+        padding-left: 1.5rem;
+        font-weight: 600;
+      }
+      .name1{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .nunc1{
+        font-size: 14px;
+        line-height: 1.6;
+        color: darkgrey;
+        width:250px;
+      }
+  
+      & > * {
+        padding: 10px;
+        margin: 0 10px;
+      }
+    }
+    .social-invite1{
+      background: orangered;
+      width: 3rem;
+      position: absolute;
+      top: 34.75rem;
+      left: 18rem;
+      & > p {
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+  .scheduled2{
+    width: 50%;
+    margin: 0 auto;
+
+    
+    .card2{
+      background: lightgrey;
+      width: 280px;
+      border-bottom: 2px solid orangered;
+      position: absolute;
+      // height: 100vh;
+      top: 65rem;
+      left: 9rem;
+  
+      .day2{
+        font-size: 2rem;
+        font-weight: 400;
+        color: orangered;
+      }
+      .date2{
+        color: orangered;
+        padding-left: 1.5rem;
+        font-weight: 600;
+      }
+      .name2{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .nunc2{
+        font-size: 14px;
+        line-height: 1.6;
+        color: darkgrey;
+        width:250px;
+      }
+  
+      & > * {
+        padding: 10px;
+        margin: 0 10px;
+      }
+    }
+    .social-invite2{
+      background: orangered;
+      width: 3rem;
+      position: absolute;
+      top: 61.5rem;
+      right: 20.5rem;
+      & > p {
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+  @media screen and (max-width: 385px){
+    .card,
+    .card1,
+    .card2,
+   .social-invite,
+   .social-invite1,
+   .social-invite2{
+      display: none;
+    }
+    .scheduled,
+    .scheduled1,
+    .scheduled2{
+      width:100%
+    }
+    img{
+      width: 100vw;
+    }
+  }
+}
+
+.footer{
+  margin-top: 5vh;
+  color: $primary-color;
+  background: rgba($color: #000000, $alpha: 0.85);
+
+  .venue_footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    max-width: 75vw;
+    margin: 2rem auto;
+    .ven-txt{
+      font-size: 2.5rem;
+      font-family: Raleway;
+    }
+    section{
+    
+      h3{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding-bottom: 2rem;
+        span{
+          // padding-bottom: 1px;
+          border-bottom: 3px solid orangered;
+        }
+      }
+          p{
+            margin-bottom: 1rem;
+            color: lightgrey;
+            .num{
+              color: white;
+              margin-top: 10.5rem;
+            }
+          }
+          address{
+            color: lightgrey;
+          }
+          ul{
+            
+            li{
+              padding: .5rem;
+            }
+          }
+      .imgs{
+        display: grid;
+        grid-gap: 5px;
+        background: white;
+        // margin-top: 1rem;
+        grid-template-areas: 
+        ' img1 img2'
+        ' img3 img4';
+        .img1{
+          grid-area: 'img1';
+          width: 150px;
+          height: 100px;
+        }
+        .img1{
+          grid-area: 'img1';
+          width: 150px;
+          height: 100px;
+        }
+        .img2{
+          grid-area: 'img2';
+          width: 150px;
+          height: 100px;
+        }
+        .img3{
+          grid-area: 'img3';
+          width: 150px;
+          height: 100px;
+        }
+        .img4{
+          grid-area: 'img4';
+          width: 150px;
+          height: 100px;
+        }
+        // img{
+        //     width: 150px;
+        //     height: 100px;
+        //   }
+
+      }
+    }
+  }
+      @media screen and (max-width: 385px){
+        .venue_footer{
+          display: block;
+        }
+
+        section{
+          margin-bottom: 1rem;
+          h3{
+            padding-bottom: 0;
+          }
+        }
+      }
+      .copy{
+        text-align: center;
+        height: 1.5rem;
+        background: #000000;
+      }
+}
